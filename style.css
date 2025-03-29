@@ -1,0 +1,102 @@
+form{
+font-size: 40px;
+background-color:hsla(0, 0%, 100%, 0.3);
+color: white;
+padding: 70px;
+margin: 300px;
+position: relative;
+
+}
+input{
+    width: 170px;
+    height: 30px;
+}
+.background-video {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+
+}
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+}
+.texto-degradado {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #00ff00, #0099ff, #9d00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+button {
+    font-size: 20px;  
+    padding: 15px 30px; 
+    border-radius: 10px; 
+}
+footer{
+    color: white;
+    text-align: center;
+}
+marquee{
+    color: #ffeb00;
+    background-color:hsla(0, 0%, 100%, 0.3);
+    font-size: xx-large;
+}
+.producto {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+.boton-comprar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton-comprar:hover {
+    background-color: #218838;
+}
+.cantidad {
+    margin: 10px 0;
+}
+.cantidad select {
+    padding: 5px;
+    font-size: 16px;
+}
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+caption {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: bold;
+}

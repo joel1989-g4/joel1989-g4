@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form>
+        <label for="usuario">Usuario:</label>
+        <input type="texto"  id="usuario"  placeholder="Ingrese su usuario" > <br>
+
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password"  id="contraseña"  placeholder="Contraseña" > <br>
+        <input type="button" value="Ingresar">
+        
+    </form>
+    <video class="background-video" autoplay loop muted>
+        <source src="/home/user/Vídeos/fondo.mp4" type="video/mp4">
+    </video>
+    <script>
+        function redirigir(event) {
+            event.preventDefault();  
+            window.location.href = "segunda_pagina.html";  
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <video class="video-fondo" autoplay loop muted>
+        <source src="fondo-video.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <header>
+        <h1>Tienda de Ropa</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="/home/user/Imágenes/Capturas de pantalla/camiseta.png" alt="Camiseta Básica">
+                <h3>Camiseta Básica</h3>
+                <p>$25.00</p>
+                <button onclick="agregarAlCarrito('Camiseta Básica', 25)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="/home/user/Imágenes/Capturas de pantalla/camiseta2.png" alt="Camiseta Estampada">
+                <h3>Camiseta Estampada</h3>
+                <p>$30.00</p>
+                <button onclick="agregarAlCarrito('Camiseta Estampada', 30)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="/home/user/Imágenes/Capturas de pantalla/pantalonl.png" alt="Pantalón Casual">
+                <h3>Pantalón Casual</h3>
+                <p>$40.00</p>
+                <button onclick="agregarAlCarrito('Pantalón Casual', 40)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="/home/user/Imágenes/Capturas de pantalla/chauqeta.png" alt="Chaqueta de Invierno">
+                <h3>Chaqueta de Invierno</h3>
+                <p>$70.00</p>
+                <button onclick="agregarAlCarrito('Chaqueta de Invierno', 70)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="/home/user/Imágenes/Capturas de pantalla/blusa.png" alt="Blusa Elegante">
+                <h3>Blusa Elegante</h3>
+                <p>$35.00</p>
+                <button onclick="agregarAlCarrito('Blusa Elegante', 35)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="/home/user/Imágenes/Capturas de pantalla/short.png" alt="Short de Verano">
+                <h3>Short de Verano</h3>
+                <p>$20.00</p>
+                <button onclick="agregarAlCarrito('Short de Verano', 20)">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="generarRecibo()">Finalizar Compra</button>
+    </section>
+    
+    <section id="recibo">
+        <h2>Recibo de Compra</h2>
+        <p id="detalle-recibo"></p>
+        <p>Total pagado: $<span id="total-recibo"></span></p>
+        <button onclick="cerrarRecibo()">Cerrar</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Tienda de Ropa</p>
+    </footer>
+</body>
+</html>
